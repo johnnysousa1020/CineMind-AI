@@ -1,0 +1,296 @@
+.history-page{
+    min-height: 100%;
+    padding: 30px;
+    color: white;
+}
+
+.history-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.history-header h1{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.history-header h1 svg{
+    color: #00E5FF;
+    flex-shrink: 0;
+}
+
+.history-header p{
+    margin-top: 8px 0 0;
+    color: #9ca3af;
+    font-size: 0.95rem;
+}
+
+.clear-history-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.clear-history-button:hover{
+    background: rgba(239,68,68,0.15);
+    color: #ef4444;
+    transform: translateY(-2px);
+}
+
+.history-empty{
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.hisstory-empty-icon{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background: rgba(0,299,255,0.08);
+    border: 1px solid rgba(0,299,255,0.01);
+    color: #00E5FF;
+    font-size: 2.2rem;
+    box-shadow: 0 0 30px rgba(0,299,255,0.08);
+}
+
+.history-empty h2{
+    margin-bottom: 0 0 8px;
+    font-size: 1.3rem;
+}
+
+.history-empty p{
+    max-width: 400px;
+    margin: 0;
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+.history-list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.history-card{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 20px;
+    border-radius: 14px;
+    background: rgba(0,299,255,0.05);
+    border: 1px solid rgba(0,299,255,0.08);
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-card:hover{
+    background: rgba(0,299,255,0.07);
+    border-color: rgba(0,299,255,0.018);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.history-card-icon{
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: rgba(0,299,255,0.01);
+    color: #00E5FF;
+    font-size: 1.3rem;
+}
+
+
+.history-card-info{
+    flex: 1;
+    min-width: 0;
+}
+
+.history-card-info h2{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.history-card-info p{
+    margin: 6px 0 0;
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+.delete-history-button{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    background: transparent;
+    color: #9ca3af;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.delete-history-button:hover{
+    background: rgba(239,68,68,0.15);
+    color: #ef4444;
+}
+
+@media (max-width: 768px) {
+    .history-page{
+        padding: 25px 15px;
+    }
+
+    .history-header{
+        gap: 20px;
+    }
+
+    .history-header h1{
+        font-size: 1.5rem;
+    }
+
+    .history-header p{
+        font-size: 0.9rem;
+    }
+
+    .clear-history-button{
+        padding: 9px 12px;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .history-page{
+        padding: 20px 15px;
+    }
+
+    .history-header{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+        margin-bottom: 25px;
+    }
+
+    .history-header h1{
+        font-size: 1.5rem;
+    }
+
+    .history-header p{
+        font-size: 0.85rem;
+    }
+
+
+    .clear-history-button{
+        width: 100%;
+        padding: 11px;
+    }
+
+    .history-empty{
+        min-height: 350px;
+        padding: 20px;
+    }
+
+    .hisstory-empty-icon{
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+    }
+
+    .history-empty h2{
+        font-size: 1.15rem;
+    }
+
+    .history-empty p{
+        font-size: 0.85rem;
+    }
+
+    .history-list{
+        gap: 10px;
+    }
+
+    .history-card{
+        gap: 12px;
+        padding: 14px;
+        border-radius: 12px;
+    }
+
+    .history-card-icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 9px;
+        font-size: 1.1rem;
+    }
+
+    .history-card-info h2{
+        font-size: 0.9rem;
+    }
+
+    .history-card-info p{
+        margin-top: 4px;
+        font-size: 0.78rem;
+    }
+
+    .delete-history-button{
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .history-page{
+        padding: 18px 12px;
+    }
+
+    .history-header h1{
+        font-size: 1.35rem;
+    }
+
+    .history-card{
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .history-card-icon{
+        width: 36px;
+        height: 36px;
+    }
+
+    .delete-history-button{
+        width: 34px;
+        height: 34px;
+    }
+}

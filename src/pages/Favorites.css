@@ -1,0 +1,25 @@
+.favorites-page{
+    padding: 35px;
+    color: white;
+}
+
+.favorites-page h1{
+    margin-bottom: 35px;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.favorites-page p{
+    font-size: 18px;
+    color: rgba(255,255,255,0.75);
+}
+
+@media (max-width: 600px) {
+    .favorites-page{
+        padding: 15px;
+    }
+
+    .favorites-page h1{
+        font-size: 24px;
+    }
+}
