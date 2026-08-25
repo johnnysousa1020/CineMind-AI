@@ -1,16 +1,19 @@
-# React + Vite
+# 🎬 CineMind AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Seu assistente inteligente para descobrir filmes e séries.
 
-Currently, two official plugins are available:
+O **CineMind AI** é uma aplicação web desenvolvida para ajudar
+usuários a descobrir filmes e séries de forma mais inteligente
+e personalizada.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A aplicação combina uma interface moderna desenvolvida em React
+com um Backend em Node.js, integração com API do TMDB e recursos
+de Inteligência Artificial para proporcionar uma experiência
+interativa de descoberta de conteúdos.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🌐 Demonstração
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 **Acesse o projeto:**
+https://cine-mind-ai-virid.vercel.app
