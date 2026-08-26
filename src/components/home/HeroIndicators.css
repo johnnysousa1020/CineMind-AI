@@ -1,9 +1,13 @@
 .hero-indicators{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
-    flex-shrink: 0;
-    margin-top: auto;
+    z-index: 10px;
 }
 
 .indicator{
@@ -23,10 +27,13 @@
     background: #00bcd4;
 }
 
+.indicator:hover{
+    background: #ffffff;
+}
+
 @media (max-width: 768px) {
     .hero-indicators{
-        justify-content: center;
-        margin-top: 20px;
+        bottom: 18px;
         gap: 6px;
     }
 
@@ -42,6 +49,7 @@
 
 @media (max-width: 480px) {
     .hero-indicators{
+        bottom: 15px;
         gap: 5px;
     }
 

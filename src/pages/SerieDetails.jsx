@@ -176,7 +176,7 @@ function SerieDetails(){
                     </button>
 
                     <iframe 
-                    src={`https:www.youtube.com/embed/${serie.trailer.key}?autoplay=1`} 
+                    src={`https://www.youtube.com/embed/${serie.trailer.key}?autoplay=1`} 
                     title={`Trailer de ${details.name}`}
                     allow="autoplay; encrypted-media"
                     allowFullScreen></iframe>
